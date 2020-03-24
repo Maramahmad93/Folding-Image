@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Folding Image</title>
+	<style type="text/css">
+		
+  ul{
+  	margin:0;
+  	padding: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	width: 640px;
+  	height: 360px;
+
+   display: flex;
+  }
+
+  ul li{
+           
+           list-style: none;
+           width: 25%;
+           background-image: url('img5.jpg');
+           height: 100%;
+           transition: 1s;
+
+
+  }
+
+
+
+  ul:hover li:nth-child(odd){
+  	transform: skewY(30deg);
+  	box-shadow: inset 20 0 50px rgba(0,0,0,0.5);
+
+  }
+  
+
+  ul:hover li:nth-child(even){
+  	transform: skewY(-30deg);
+  	box-shadow: inset 20 0 50px rgba(0,0,0,0.5);
+
+  }
+
+  ul li:nth-child(1){
+  	background-position: 0;
+  }
+  
+  ul li:nth-child(2){
+  	background-position: -93.3px;
+  }
+  ul li:nth-child(3){
+  	background-position:calc(-93.3px*2);
+  }
+  ul li:nth-child(4){
+  	background-position: calc(-93.3px*3);
+  }
+
+
+	</style>
+</head>
+<body>
+   
+<ul>
+	<li></li>
+	<li></li>
+	<li></li>
+	<li></li>
+	
+</ul>
+
+</body>
+</html>
